@@ -15,14 +15,14 @@ db.employees.updateMany(
 
 db.employees.updateMany(
     {department:"IT"},      
-    { $inc:{point:-1}}      //decrement by 1 
-)
+    { $inc:{point:-1}}
+)                          //decrement by 1 
 
 db.employees.updateOne(
     {email : "krish@gmail.com"},
     {$set: {name: "Krish", department: "HR", salary:2700}},
-    {upsert:true}      //if krish not exist it will cretae new one 
-);
+    {upsert:true}
+);          //if krish not exist it will cretae new one 
 
 db.employees.deleteOne({email:"krish@gmail.com"})
 db.employees.deleteMany({department:"Admin"})
@@ -52,7 +52,11 @@ db.employees.find({},{_id:0, name:1, location:1})
 
 db.employees.updateMany(
     {},
-    {$push:{points:3}}              //it will create an points array             
-)
+    {$push:{points:3}}
+)                //it will create an points array             
 
 
+db.employees.updateMany(
+    {},
+    {$pull:{points:{$gt:3}}}
+)              //remove from array based on the condition
