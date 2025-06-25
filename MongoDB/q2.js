@@ -81,7 +81,8 @@
 //   { name: 'Pant', age: 27 },
 //   { name: 'KL Rahul', age: 30 }
 // ]
-// lpu>
+// lpu> db.users.drop()      //delete
+// true
 
 // lpu> db.users.find({},{name:1}) //2nd bracket filter,
 
