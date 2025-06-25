@@ -31,6 +31,10 @@ db.employees.find(
 //     {$and:[{},{}]}
 // )
 
+db.employees.find({department:{$eq:"IT"}})                  //equal
+db.employees.find({department:{$ne:"IT"}})                  //not equal
+
+
 // lpu> db.employees.find()
 // [
 //   {
