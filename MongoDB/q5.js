@@ -54,9 +54,23 @@ db.employees.updateMany(
     {},
     {$push:{points:3}}
 )                //it will create an points array             
+db.employees.updateMany({department:"IT"}, {$push:{points:7}})
 
 
 db.employees.updateMany(
     {},
     {$pull:{points:{$gt:3}}}
 )              //remove from array based on the condition
+
+
+db.employees.updateMany(
+    {},
+    {$addToSet:{location:'LA'}}
+)   //$addToSet: This adds a value to an array only if that value does not already exist in the array. It prevents duplicates.
+
+db.employees.updateMany(
+    {},
+    {$pop:{location:-1}}
+)    //$pop: { location: -1 } → removes the first element from the location array.
+     // $pop: { location: 1 } → would remove the last element instead.
+
