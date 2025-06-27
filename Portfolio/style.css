@@ -33,3 +33,195 @@ header ul li a:hover{
     background-color:violet;
     border-radius: 100px;
 }
+
+
+/* -------------- */
+#hero-section{
+    display: flex;
+    padding: 50px 0px 0px;
+    border: 20px;
+    background-color: rgb(227, 224, 217);
+}
+.left{
+    flex: 2;
+    /* padding: 20px; */
+    margin: 100px;
+    /* text-align:justify; */
+}
+.right{
+    flex: 1;
+    padding: 100px;
+    margin: 40px;
+}
+.left h1{
+    font-weight: 800;
+    font-size: 400%;
+}
+.left p{
+    font-size: 200%;
+}
+ .left button{
+    color: blue;
+    border-radius: 10%;
+    border-color: white;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+ }
+ .left button a{
+    text-decoration: none;
+    color: black;
+ }
+
+
+/* --------------- */
+#project-section{
+    background-color: red;
+    padding: 80px 20px;
+    text-align: center;
+    height: 83vh;
+}
+#project-section h1{
+    padding: 30px;
+    font-size: 50px;
+}
+.projects{
+    display: flex; 
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.proj{
+    flex: 1;
+    background-color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,5);
+}
+
+/* ---------------- */
+#service-section{
+    background-color: teal;
+    padding: 80px 20px;
+    height: 83vh;
+    width: 100cw;
+    text-align: center;
+}
+#service-section h1{
+    padding: 30px;
+    font-size: 60px;
+    
+}
+.services{
+    display: flex; 
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.srvs{
+    flex: 1;
+    background-color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,5);
+}
+.srvs h3{
+    font-size: 40px;
+}
+.srvs p{
+    font: 20px;
+    text-align:center;
+}
+
+/* ---------------- */
+#about-section{
+    height:90vh;
+    /* background-color: grey; */
+    text-align: center;
+}
+
+.ski{
+    font-size: 60px;
+    margin: 40px 20px;
+    /* padding: 30px; */
+}
+
+.abt{
+    font-size: 30px;
+    margin: 60px;
+}
+
+.skills{
+    display: flex;
+    gap: 100px;
+}
+.img1{
+    height: 200px;
+    width: 200px;
+    /* width: 150px;
+    height: auto; */
+    border-radius: 30px;
+}
+
+/* -------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between inputs */
+  width: 300px; 
+  /* margin: auto; */
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.final{
+    display: flex;
+}
+.left h1{
+    font-size: 30px;
+}
+.Contact h1{
+    padding: 20px;
+    font-size: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+
+    .row {
+      padding: 100px;
+      height: 75%;
+    }
+
+    .row .box {
+      padding: 20px;
+      margin: 10px;
+    }
+
+    .footer {
+      padding: 20px;
+      margin: 0px;
+      background-color: black;
+      color: white;
+      font-size: large;
+    }
+
+    button {
+      background-color: teal;
+      padding: 10px;
+      color: white;
+      border: none;
+      border-radius: 10%;
+    }
+    #contact h1{
+        font-size: 60px;
+    }
