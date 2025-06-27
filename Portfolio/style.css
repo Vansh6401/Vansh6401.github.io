@@ -2,12 +2,18 @@ body{
     margin: 0px;
     padding: 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: gray;
     padding: 10px 20px;
+    position: fixed;
+    width: 100%;
 }
 header h1{
     color: whitesmoke;
