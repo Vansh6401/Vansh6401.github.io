@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+}
+header h1{
+    color: whitesmoke;
+    margin: 0;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header li{
+    margin: 20px;
+    font-size: 20px;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    transition: background-color 1sec ease;
+    padding: 8px 12px;
+}
+header ul li a:hover{
+    background-color:violet;
+    border-radius: 100px;
+}
