@@ -47,3 +47,4 @@ db.posts.aggregate([
 {$unwind: "Comments"},
 {$project: {post:1,comment: "$Comments.comment",_id:0}}
 ])
+

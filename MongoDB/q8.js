@@ -62,3 +62,49 @@ db.studentInfo.aggregate([
         _id:"$marks.term",AvgScore:{$avg:"$marks.score"}
     }}
 ])
+
+
+db.employees.aggregate([
+    {$project:{_id:0, name:1,salary:1,Grade:"Grade A"}},
+])
+
+db.employees.aggregate([
+    {$project:{
+        _id:0,
+        name:1,
+        salary:1,
+        Grade:{$cond:{
+            if:{$gt:["$salary",3000]},
+            then:"Grade A",
+            else:"Grade B"
+        }}
+    }}
+])
+
+db.createview("salaryview","employees",[
+    {$project:
+        {
+            _id:0,
+            name:1,
+            salary:1,
+            department:1,
+            Grade:{
+                $cond:
+                {
+                if:{$gt:["$salary",3000]},
+                then:"Grade A",
+                else:"Grade B"
+                }
+            }
+        }
+    }
+])
+
+
+
+db.employees.updateOne({name:"Vansh"},{$set:{marks:75}})
+
+
+
+// C:\Users\vansh>mongodump -d lpu -o D:\lpubackup
+// mongorestore -d lpu D:\lpubackup
