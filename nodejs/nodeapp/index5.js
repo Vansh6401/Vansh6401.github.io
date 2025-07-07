@@ -15,3 +15,11 @@ app.post("/", (req,res) => {
 app.get("/", (req, res) => {
     res.json(products);
 });
+
+app.delete("/:id", (req,res) => {
+    const id = req.params.id;
+    products = products.filter((product) => product.id !== id);
+    res.json("Product Deleted");
+});
+
+
